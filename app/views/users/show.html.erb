@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First name:</b>
+  <%= user.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= user.last_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(user) %> |
+<%= link_to 'Back', users_path %>
