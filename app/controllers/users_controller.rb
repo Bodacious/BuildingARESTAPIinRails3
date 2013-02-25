@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
-  
+
+  # Make these helpers available to the view too
+  helper_method :user, :users
+
   respond_to :html, :json, :xml
     
   def index
@@ -26,9 +29,7 @@ class UsersController < ApplicationController
   end
   
   private
-  
-  # Make these helpers available to the view too
-  helper_method :user, :users
+
   
   def user
     # If the action is new or create...
